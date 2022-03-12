@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./descuento_cupones.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <head class="cabecera">
+            <h1>Compra con cupones de descuento</h1>
+        </head>
+        <section>
+            <form class="formulario">
+
+                <div class="producto">
+                    <div><img class="producto--imagen"
+                            src="https://images.pexels.com/photos/210528/pexels-photo-210528.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="relog">
+                    </div>
+                    <div>
+                        <p>Relog Alemán de Alemania</p>
+                        <p id="brutoP"></p>
+                        <p id="descuentoP"></p>
+                    </div>
+
+                </div>
+                <div class="formulario--cupones">
+                    <label for="InputPrice">Ingrese el precio:</label>
+                    <input id="InputPrice" type="number">
+                    
+                    <label class="coupons--label" for="InputCoupon">Elige tu cupón con nombre raro:</label>
+                    <input id="InputCoupon" type="text">
+                    <ul>
+                        <li>JuanDC_es_Batman</li>
+                        <li>pero_no_le_digas_a_nadie</li>
+                        <li>es_un_secreto</li>
+                    </ul>
+                   
+                    <!-- <select id="InputCoupon">
+                        <option value="">--Seleccione su cupón</option>
+                        <option value="15">JuanDC_es_Batman</option>
+                        <option value="30">pero_no_le_digas_a_nadie</option>
+                        <option value="25">es_un_secreto</option>
+                    </select> -->
+
+                    <button type="button" onclick="onClickButtonPriceDiscount()">Calcular</button>
+                    
+                </div>
+
+
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
