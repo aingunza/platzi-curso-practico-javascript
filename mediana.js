@@ -19,8 +19,6 @@ function ordenaArray(array) {
   return array;
 }
 
-const mitadLista1 = list1.length / 2;
-
 function esPar(numero) {
   if (numero % 2 == 0) {
     return true;
@@ -28,9 +26,9 @@ function esPar(numero) {
     return false;
   }
 }
-let mediana;
 
 function hallarMediana(lista) {
+  let mediana;
   const listaOrd = ordenaArray(lista);
   if (esPar(listaOrd.length)) {
     mediana =
